@@ -1,7 +1,24 @@
-import { NextAuthOptions } from "next-auth";
+import { NextAuthOptions, User, Session } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { getCollection } from "@/lib/db";
-import { compare } from "bcrypt";
+import { compare } from "bcryptjs";
+
+// Extend the User and Session types to include 'role'
+declare module "next-auth" {
+  interface User {
+    role?: string;
+    id?: string;
+  }
+  interface Session {
+    user: {
+      id?: string;
+      role?: string;
+      name?: string | null;
+      email?: string | null;
+      image?: string | null;
+    };
+  }
+}
 
 export const authOptions: NextAuthOptions = {
   session: {

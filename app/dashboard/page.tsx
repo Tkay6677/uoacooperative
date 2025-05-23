@@ -24,7 +24,7 @@ import {
   PiggyBank, 
   Heart, 
   PlusCircle,
-  Clock
+  Clock11
 } from "lucide-react";
 import Link from "next/link";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
@@ -594,7 +594,7 @@ export default function DashboardPage() {
                               <span>{booking.date}</span>
                             </div>
                             <div className="flex items-center text-sm text-muted-foreground mt-1">
-                              <Clock className="h-4 w-4 mr-1" />
+                              <Clock11 className="h-4 w-4 mr-1" />
                               <span>{booking.time}</span>
                             </div>
                           </div>
