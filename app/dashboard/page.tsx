@@ -23,7 +23,8 @@ import {
   ShoppingCart, 
   PiggyBank, 
   Heart, 
-  PlusCircle 
+  PlusCircle,
+  Clock
 } from "lucide-react";
 import Link from "next/link";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
