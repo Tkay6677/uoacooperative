@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
+//import { Progress } from "@/components/ui/progress";
 import { 
   CreditCard, 
   DollarSign, 
@@ -422,7 +422,7 @@ export default function DashboardPage() {
                     <span className="text-sm font-medium">Total Savings</span>
                     <span className="text-sm font-medium">₦195,000</span>
                   </div>
-                  <Progress value={78} className="h-2" />
+                  {/* <Progress value={78} className="h-2" /> */}
                   <p className="text-xs text-muted-foreground mt-2">
                     78% of your annual target (₦250,000)
                   </p>
@@ -554,7 +554,7 @@ export default function DashboardPage() {
                       
                       <div className="space-y-2">
                         <div className="text-sm mb-1">Repayment Progress</div>
-                        <Progress value={(1 - (loan.balance / loan.amount)) * 100} className="h-2" />
+                        {/* <Progress value={(1 - (loan.balance / loan.amount)) * 100} className="h-2" /> */}
                         <p className="text-xs text-muted-foreground">
                           {Math.round((1 - (loan.balance / loan.amount)) * 100)}% paid off
                         </p>
